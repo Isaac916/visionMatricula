@@ -3,7 +3,7 @@ import requests
 
 # Configuración de Azure Computer Vision
 AZURE_ENDPOINT = "https://visionisaaciad.cognitiveservices.azure.com/"
-AZURE_KEY = "AcjgtGxVNoaQHtEFh3pbYeFh2bkUUZOw4Binmj8oThVHu5u9Vin3JQQJ99BCACYeBjFXJ3w3AAAFACOGJb7x"
+AZURE_KEY = st.secrets["AZURE_KEY"]
 OCR_URL = f"{AZURE_ENDPOINT}vision/v3.2/ocr"
 
 # Función para extraer la matrícula
